@@ -1,0 +1,41 @@
+body {
+  background: #111;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.food-text {
+  font-size: 16px;
+  animation: foodGrow 6s ease-in-out forwards;
+}
+
+@keyframes foodGrow {
+
+  
+  0% {
+    font-size: 16px;
+    color: #d4a017; 
+  }
+
+  33% {
+    font-size: 32px;
+    color: #8b4513; 
+  }
+
+  /* Pizza */
+  66% {
+    font-size: 48px;
+    color: #c0392b;
+  }
+
+  /* Cookie */
+  100% {
+    font-size: 64px;
+    color: #5c3a21; 
+  }
+}

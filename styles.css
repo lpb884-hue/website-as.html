@@ -1,59 +1,66 @@
 body {
-  margin: 0;
-  padding: 40px;
-  background: #111;
-  font-family: Arial, sans-serif;
-}
-
-.content p {
-  font-size: 14px;
-  transition: all 0.4s ease;
-}
-
-.burger { color: #d4a017; }   
-.pizza  { color: #c0392b; }   
-.cookie { color: #5c3a21; }   
-
-@media screen and (min-width: 376px) {
-  .content p {
-    font-size: 18px;
-    letter-spacing: 1px;
+    margin: 0;
+    padding: 40px;
+    background: #111;
+    font-family: Arial, sans-serif;
   }
-
-  .burger { color: #8b4513; }   
-  .pizza  { color: #e74c3c; }   
-  .cookie { color: #7b4b2a; }
-}
-
-@media screen and (min-width: 600px) {
+  
   .content p {
-    font-size: 24px;
-    letter-spacing: 2px;
+    font-size: 12px;
+    transition: all 0.4s ease;
   }
+  
+  .burger { color: antiquewhite; }   
+  .pizza  { color: #c0392b; }   
+  .cookie { color: #5c3a21; }   
+  .cheese { color: yellow;}
+  
+  @media screen and (min-width: 376px) {
+    .content p {
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+  
+    .burger { color: antiquewhite; }   
+    .pizza  { color: #e74c3c; }   
+    .cookie { color: #7b4b2a; }
+    .cheese { color: yellow;}
 
-  .burger { color: #f4c430; }   
-  .pizza  { color: #ff6347; }   
-  .cookie { color: #8b5e3c; }
-}
-
-@media screen and (min-width: 800px) {
-  .content p {
-    font-size: 32px;
-    letter-spacing: 3px;
   }
-
-  .burger { color: #a0522d; }
-  .pizza  { color: #b22222; }
-  .cookie { color: #a9745b; }
-}
-
-@media screen and (min-width: 1000px) {
-  .content p {
-    font-size: 42px;
-    letter-spacing: 4px;
+  
+  @media screen and (min-width: 600px) {
+    .content p {
+      font-size: 24px;
+      letter-spacing: 2px;
+    }
+  
+    .burger { color: antiquewhite; }   
+    .pizza  { color: #ff6347; }   
+    .cookie { color: #8b5e3c; }
+    .cheese { color: yellow;}
   }
-
-  .burger { color: #ffd700; }
-  .pizza  { color: #ff4500; }
-  .cookie { color: #6f4e37; }
-}
+  
+  @media screen and (min-width: 800px) {
+    .content p {
+      font-size: 32px;
+      letter-spacing: 3px;
+    }
+  
+    .burger { color: antiquewhite; }
+    .pizza  { color: #b22222; }
+    .cookie { color: #a9745b; }
+    .cheese { color: yellow;}
+  }
+  
+  @media screen and (min-width: 1000px) {
+    .content p {
+      font-size: 42px;
+      letter-spacing: 4px;
+    }
+  
+    .burger { color: antiquewhite; }
+    .pizza  { color: #ff4500; }
+    .cookie { color: #6f4e37; }
+    .cheese { color: yellow;}
+  }
+  

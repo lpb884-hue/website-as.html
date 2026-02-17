@@ -1,66 +1,203 @@
+
+
 body {
     margin: 0;
-    padding: 40px;
-    background: #111;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    color: black;
+  }
+  
+  .title {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 28px;
+    z-index: 1000;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+  
+  .content {
+    margin-top: 120px;
+    max-width: 60ch;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
   
   .content p {
-    font-size: 12px;
-    transition: all 0.4s ease;
+    font-size: clamp(14px, 2vw, 20px);
+    line-height: 1.7;
+    margin-bottom: 40px;
+    transition: all 0.6s ease;
+  }
+ 
+  .cheese {
+    display: none;
+  }
+
+  .layer {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  }
+
+  
+  
+  @media screen and (max-width: 1100px) {
+  
+    body {
+      background: linear-gradient(
+        90deg,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet
+      );
+      color: white;
+    }
+  
+    .title {
+      background: rgba(0,0,0,0.7);
+      color: white;
+    }
+  
+    .content p {
+      font-size: 18px;
+    }
+  
   }
   
-  .burger { color: antiquewhite; }   
-  .pizza  { color: #c0392b; }   
-  .cookie { color: #5c3a21; }   
-  .cheese { color: yellow;}
+
+@media screen and (max-width: 900px) {
+
+    body {
+      background: black;
+    }
   
-  @media screen and (min-width: 376px) {
+    .content {
+      max-width: 100%;
+    }
+  
     .content p {
       font-size: 12px;
-      letter-spacing: 1px;
+      margin: 0;
+      padding: 20px 15px;
     }
   
-    .burger { color: antiquewhite; }   
-    .pizza  { color: #e74c3c; }   
-    .cookie { color: #7b4b2a; }
-    .cheese { color: yellow;}
+    .bun-top {
+      background: linear-gradient(to bottom, sandybrown, chocolate);
+      color: white;
+      border-radius: 40px 40px 0 0;
+    }
+  
+    .pattyuno {
+      background: linear-gradient(to top, indianred, lightcoral);
+      color: white;
+    }
+  
+    .pattydos {
+      background: indianred;
+      color: white;
+    }
+  
+    .bun-bottom {
+      background: linear-gradient(to top, sandybrown, chocolate);
+      color: white;
+      border-radius: 0 0 20px 20px;
+    }
+  
+  }
+  
 
-  }
   
-  @media screen and (min-width: 600px) {
-    .content p {
-      font-size: 24px;
-      letter-spacing: 2px;
+  @media screen and (max-width: 700px) {
+  
+    body {
+      background: repeating-linear-gradient(
+        45deg,
+        red 0px,
+        orange 40px,
+        yellow 80px,
+        green 120px,
+        blue 160px,
+        violet 200px
+      );
+      color: white;
     }
   
-    .burger { color: antiquewhite; }   
-    .pizza  { color: #ff6347; }   
-    .cookie { color: #8b5e3c; }
-    .cheese { color: yellow;}
-  }
-  
-  @media screen and (min-width: 800px) {
-    .content p {
-      font-size: 32px;
-      letter-spacing: 3px;
+    .title {
+      background: black;
+      color: white;
     }
   
-    .burger { color: antiquewhite; }
-    .pizza  { color: #b22222; }
-    .cookie { color: #a9745b; }
-    .cheese { color: yellow;}
-  }
-  
-  @media screen and (min-width: 1000px) {
     .content p {
-      font-size: 42px;
-      letter-spacing: 4px;
+      font-size: 14px;
     }
   
-    .burger { color: antiquewhite; }
-    .pizza  { color: #ff4500; }
-    .cookie { color: #6f4e37; }
-    .cheese { color: yellow;}
+  
+    .bun-top,
+    .pattyuno,
+    .pattydos,
+    .bun-bottom {
+      background: transparent;
+      color: inherit;
+      border-radius: 0;
+    }
+  
   }
+  
+  
+
+  @media screen and (max-width: 500px) {
+  
+    body {
+      background: black;
+    }
+  
+    .content {
+      max-width: 100%;
+    }
+  
+    .content p {
+      font-size: 11px; 
+      margin: 0;
+      padding: 18px 12px;
+    }
+  
+    .bun-top {
+      background: linear-gradient(to bottom, sandybrown, chocolate);
+      color: white;
+      border-radius: 40px 40px 0 0;
+    }
+  
+    .pattyuno {
+      background: linear-gradient(to bottom, saddlebrown, sienna);
+      color: white;
+    }
+  
+    .cheese {
+        display: block;
+        background: linear-gradient(to top, yellow, gold);
+        color: white;
+    }
+
+    .pattydos {
+      background: linear-gradient(to top, saddlebrown, sienna);
+      color: white;
+    }
+  
+    .bun-bottom {
+      background: linear-gradient(to top, sandybrown, chocolate);
+      color: white;
+      border-radius: 0 0 20px 20px;
+    }
+  
+  }
+  
   
